@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>오늘의 미션</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #fefefe;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    #mission {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>오늘의 랜덤 미션 🎯</h1>
+  <button onclick="generateMission()">미션 받기</button>
+  <div id="mission"></div>
+
+  <script>
+    const missions = [
+      "게임 이기기 전까지 안 쉬기",
+      "옆에 있는 물건 길이재기",
+      "모르는 사람한테 인사하기",
+      "AI에게 오늘 칭찬 받기",
+      "책 10페이지만 읽기",
+      "산책하면서 하늘 보기",
+      "SNS 끄고 멍 때리기",
+      "친구한테 이모티콘 5개 보내기"
+    ];
+
+    function generateMission() {
+      const index = Math.floor(Math.random() * missions.length);
+      document.getElementById("mission").innerText = missions[index];
+    }
+  </script>
+</body>
+</html>
