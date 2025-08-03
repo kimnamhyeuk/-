@@ -6,4 +6,4 @@
 - 간단하고 귀찮지 않음
 
 ## 배포 주소
-👉 https://your-name.vercel.app
+👉 추후
